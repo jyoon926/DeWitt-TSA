@@ -1,0 +1,130 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/stylesheet.css">
+		<link rel="stylesheet" href="css/hover.css">
+		<script src="js/script.js"></script>
+     <script src="js/jquery-3.2.1.js"></script>
+     <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+     <script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script>
+     $(document).ready(function(){
+     $("a").on('click', function(event) {
+     if (this.hash !== "") {
+     event.preventDefault();
+     var hash = this.hash;
+     $('html, body').animate({
+     scrollTop: $(hash).offset().top
+     }, 800, function(){
+     window.location.hash = hash;
+     });
+     } // End if
+     });
+     });
+     </script>
+     <script>
+	     $(window).on("scroll", function () {
+	         if ($(this).scrollTop() > 1) {
+	             $(".header").css("background-color", "rgba(16,16,20,1)");
+	             $(".link").css("padding-top", "30px");
+	             $(".link").css("padding-bottom", "30px");
+	             $(".header").css("box-shadow", "0 3px 50px rgba(0, 0, 0, 0.75)");
+	         }
+	         else {
+	             $(".header").css("background-color", "rgba(0,0,0,0)");
+	             $(".link").css("padding-top", "60px");
+	             $(".link").css("padding-bottom", "60px");
+	             $(".header").css("box-shadow", "0 3px 50px rgba(0, 0, 0, 0)");
+	         }
+	     });
+	     //Parallax
+		function simpleParallax() {
+		    //This variable is storing the distance scrolled
+		    var scrolled = $(window).scrollTop() + 1;
+
+		    //Every element with the class "scroll" will have parallax background
+		    //Change the "0.3" for adjusting scroll speed.
+		    $('.scroll').css('background-position', '0' + -(scrolled * 0.3) + 'px');
+		}
+		//Everytime we scroll, it will fire the function
+		$(window).scroll(function (e) {
+		    simpleParallax();
+		});
+		var scwease = require('scroll-with-ease');
+		scwease(element, 1500, [0.42, 0.0, 0.58, 1.0]);
+		   </script>
+  </head>
+
+  <body>
+
+		<input type="checkbox" id="sidebartoggler" name="" value="" />
+
+		<div class="page-wrap">
+
+			<label for="sidebartoggler" class="toggle">&#9776;</label>
+
+			<div class="page-content">
+
+				<div id="top"></div>
+
+				<div class="scroll">
+					<h2 class="landertext">DeWitt Middle School</h2>
+					<h1 class="landertext">TSA</h1>
+				</div>
+
+				<div id="about" class="about">
+
+					<h2>About DeWitt TSA</h2>
+
+					<p>
+						DeWitt TSA is the local chapter of the New York State and the National Technology Student Associations. The National Technology Student Association (TSA) is composed of over 200,000 elementary, middle, and high school students in 2,000 schools spanning 49 states.
+					</p>
+
+				</div>
+
+				<div class="tsa">
+					<p>The DeWitt chapter competes in the New York State Technology Student Association Competition and the National Technology Student Association Competition. The NYS competition is held at SUNY Oswego or SUNY Buffalo in the Spring. The national competition is at the end of June. State dues is usually $5 whereas national dues are $9. In 2003 the chapter membership implemented a lab fee. This fee $50 fee buys materials used by club members as well the official club polo-shirt. There were additional costs for attending conferences. The NYS conference has typically been $55. This included transportation and registration. Scholarships have been available, especially for those students qualifying for free or reduced lunch. Attending the national conference is very expensive. This often costs each student several hundred dollars. To supplement this DeWitt TSA does many fundraisers during the year (bake sales, bowl-a-thon, car wash sales, etc.)</p>
+				</div>
+
+				<div class="who">
+					<h2>Who is a DeWitt TSA Member?</h2>
+					<p>
+						There are certain qualities that are desired of the members of the DeWitt TSA chapter. These include: able to work well with others, own work is done well, is emotionally stable, is tech savy, is a problem solver, possesses a strong work ethic, is self-directed, has a hunger to learn, is able to balance home life, school work and TSA.
+					</p>
+				</div>
+
+				<div class="tsa">
+					<p>A consistent level of effort and discipline is needed in order to adequately prepare for the competitions. Students who do not meet these prerequisites will not be able to participate. It's important to note that the chapter is open to all students, 6-8th grade, girls and boys. However, preference will be given to 8th graders. Enrollment is very limited! The goal is to have membership of an even number of girls and boys. The purpose of DeWitt TSA is not to bring home trophies! Although awards and trophies are exciting and demonstrate student's knowledge, they are not what the chapter is all about. Trophies are the property of TSA, although students may purchase duplicates. Students who join TSA join for many reasons. Some join because it's fun, and there are many hands-on activities to do. Such as: CO2 Dragsters, Computer Control, Electronics, Digital Video, Digital Photography, Computer Aided Design (CAD), Junior Solar Sprint (JSS), and many more! Others join because they are interested in a technology career such as mechanical engineering or web designer, to name a few.</p>
+				</div>
+
+				<div class="safety">
+					<h2>Safety</h2>
+					<p>During TSA, students may elect to operate power tools and other equipment to produce prototypes and full scale working models to solve various technological problems as well as prepare for competitions. During this time, the Technology Lab can become very dusty and noisy at times even though the labs have a fully functional dust collection system and air cleaners. Hearing and eye protection apparel must be worn at all times to make the technology laboratory a safe and fun place to work. Therefore, all students MUST wear the appropriate safety apparel for the task they are working on. Students who violate the safety rules will be no longer able to work in the technology laboratory and will be removed from TSA.</p>
+				</div>
+
+			</div>
+
+			<div class="sidebar">
+				<img src="img/icon.png" alt"">
+				<ul>
+					<li><a href="#top" class="hvr-underline-from-right">Home</a></li><li>
+					<a href="#about" class="hvr-underline-from-right">About</a></li><li>
+					<a href="#showcase" class="hvr-underline-from-right">Showcase</a></li><li>
+					<a href="#apply" class="hvr-underline-from-right">Applications</a></li><li>
+					<a href="#contact" class="hvr-underline-from-right">Contact</a></li>
+				</ul>
+			</div>
+
+			<footer>
+				<a href="#top" class="hvr-underline-from-right">Back To Top &#9650;</a>
+			</footer>
+
+		</div>
+
+  </body>
+
+</html>

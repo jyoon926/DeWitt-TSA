@@ -101,7 +101,7 @@ body {
   -webkit-transition-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
   padding: 0 8px 3px 8px;
-  border-radius: 30px;
+  border-radius: 25px;
 }
 
 .toggle:hover {

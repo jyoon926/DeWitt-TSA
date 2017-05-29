@@ -186,6 +186,32 @@ body {
   letter-spacing: 2px;
 }
 
+.offset {
+  padding: 10px;
+  font-size: 4px;
+  margin-bottom: 88px;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+
+.topbutton {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border: 3px solid white;
+  font-size: 18px;
+  margin-top: 50px;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+  font-weight: 100;
+}
+
+.topbutton:hover {
+  border-radius: 25px;
+  font-weight: 400;
+  background-color: rgba(0,0,0,0.3);
+}
+
 .rand {
   height: 5000px;
 }
@@ -289,6 +315,7 @@ body {
   background-size: cover;
   color: white;
   margin: 0;
+  margin-bottom: 200px;
 }
 
 .safety h2 {
@@ -319,6 +346,10 @@ footer {
           align-items: center;
   height: 200px;
   background-color: #010c16;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: -10;
 }
 
 footer a {
